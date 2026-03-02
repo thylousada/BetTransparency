@@ -6,19 +6,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-    body{font-family:'Roboto',sans-serif;margin:0;background:#eef2f7;color:#222;line-height:1.6;}
-    header{background:#0b132b;color:white;padding:20px 40px;position:sticky;top:0;z-index:100;}
-    nav{display:flex;flex-wrap:wrap;justify-content:center;}
-    nav a{color:white;margin:0 15px;text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px;border-radius:5px;}
-    nav a:hover{background:#1c2a4a;}
-    main{padding:50px 20px;max-width:1000px;margin:30px auto;background:white;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.08);}
-    h1{margin-top:0;font-weight:700;color:#0b132b;text-align:center;}
-    p{font-size:16px;}
-    .btn{display:inline-block;padding:12px 22px;background:#1c7ed6;color:white;text-decoration:none;border-radius:8px;margin-top:20px;font-weight:600;transition:0.3s;}
-    .btn:hover{background:#1864ab;}
-    .country-info{text-align:center;margin:20px 0;font-weight:500;font-size:16px;color:#1c2a4a;}
-    footer{text-align:center;padding:30px;font-size:13px;color:#666;background:#f0f3f8;}
-    @media(max-width:768px){main{padding:30px 15px;} nav a{margin:8px 10px;font-size:14px;}}
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #eef2f7;
+      color: #222;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: #0b132b;
+      color: white;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #1c2a4a;
+    }
+
+    main {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-weight: 700;
+      color: #0b132b;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    h2 {
+      color: #0b132b;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .country-info {
+      text-align: center;
+      margin: 20px 0;
+      font-weight: 500;
+      font-size: 16px;
+      color: #1c2a4a;
+    }
+
+    .section {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 1 1 calc(33% - 20px);
+      background: #f9fafd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      min-width: 250px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #0b132b;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #1c7ed6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1864ab;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #666;
+      background: #f0f3f8;
+    }
+
+    @media(max-width: 992px) {
+      .cards { flex-direction: column; }
+      .card { flex: 1 1 100%; }
+    }
+
+    @media(max-width:768px) {
+      main { padding: 30px 15px; }
+      nav a { margin: 8px 10px; font-size: 14px; }
+      h1 { font-size: 28px; }
+    }
   </style>
 </head>
 <body>
@@ -36,10 +161,51 @@
 </header>
 
 <main>
-  <h1>Bem-vindo ao BetTransparency</h1>
-  <div class="country-info">País analisado: Portugal • Expansão futura: Espanha • França • Itália</div>
-  <p>O BetTransparency é um projeto educativo e informativo sobre publicidade de apostas online. Aqui você encontra informações sobre operadores legais, alertas de publicidade de operadores ilegais e guias educativos para jogar de forma consciente.</p>
-  <a class="btn" href="news.html">Ver Notícias & Alertas</a>
+  <!-- Introdução -->
+  <div class="section">
+    <h1>Bem-vindo ao BetTransparency</h1>
+    <div class="country-info">País analisado: Portugal • Expansão futura: Espanha • França • Itália</div>
+    <p>O BetTransparency é um projeto educativo que alerta jogadores sobre apostas online ilegais, promove práticas de jogo responsável e fornece guias educativos.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Verificação de Licença</h3>
+        <p>Confirme sempre se o operador de apostas online é licenciado pelo SRIJ em Portugal.</p>
+        <a class="btn" href="license.html">Verificar Licença</a>
+      </div>
+      <div class="card">
+        <h3>Alertas de Influenciadores</h3>
+        <p>Identificamos conteúdos de influenciadores que promovem operadores ilegais e mostramos os riscos associados.</p>
+        <a class="btn" href="ads.html">Ver Análise</a>
+      </div>
+      <div class="card">
+        <h3>Guias Educativos</h3>
+        <p>Dicas para reconhecer sinais de alerta e jogar de forma segura e responsável.</p>
+        <a class="btn" href="guides.html">Ver Guias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notícias recentes -->
+  <div class="section">
+    <h2>Últimos Artigos e Alertas</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Influenciador X promove operador não licenciado</h3>
+        <p>Riscos de jogar em plataformas não licenciadas.</p>
+        <a class="btn" href="article1.html">Ler Mais</a>
+      </div>
+      <div class="card">
+        <h3>Bónus elevado sem menção a operador legal</h3>
+        <p>Alertas sobre promoções suspeitas.</p>
+        <a class="btn" href="article2.html">Ler Mais</a>
+      </div>
+      <div class="card">
+        <h3>Como identificar apostas ilegais online</h3>
+        <p>Guia rápido de sinais de alerta para jogadores.</p>
+        <a class="btn" href="article3.html">Ler Mais</a>
+      </div>
+    </div>
+  </div>
 </main>
 
 <footer>
