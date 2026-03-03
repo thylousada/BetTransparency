@@ -26,17 +26,15 @@
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="license.html">Verificar Licença</a>
-    <a href="ads.html">Análise de Publicidade</a>
-    <a href="guides.html">Guias</a>
-    <a href="methodology.html">Metodologia</a>
-    <a href="news.html">Notícias</a>
-    <a href="about.html">Sobre</a>
-  </nav>
-</header>
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
 <main>
   <h1>Análise de Publicidade de Operadores Ilegais</h1>
