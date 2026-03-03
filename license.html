@@ -2,250 +2,145 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<title>Operadores Licenciados - BetTransparency</title>
+<title>BetTransparency - Operadores Licenciados</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Roboto, sans-serif;
-  margin: 0;
-  background: #eef2f7;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-main {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  color: #0b132b;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.card img {
-  width: 120px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
-
-.card h3 {
-  margin: 10px 0;
-}
-
-.card a.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #1c7ed6;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-.card a.btn:hover {
-  background: #1864ab;
-}
-
-.srij-btn {
-  display:inline-block;
-  padding:14px 24px;
-  background:#0b132b;
-  color:white;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:600;
-  margin:20px auto;
-}
-
-.srij-btn:hover {
-  background:#1c2a4a;
-}
-
+body{font-family:'Roboto',sans-serif;margin:0;background:#eef2f7;color:#222;line-height:1.6;}
+header{background:#0b132b;color:white;padding:20px 40px;position:sticky;top:0;z-index:100;}
+nav{display:flex;flex-wrap:wrap;justify-content:center;}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px;border-radius:5px;transition:0.3s;}
+nav a:hover{background:#1c2a4a;}
+main{padding:50px 20px;max-width:1200px;margin:30px auto;}
+h1{text-align:center;font-size:36px;color:#0b132b;margin-top:0;}
+p{font-size:16px;margin-bottom:15px;}
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;}
+.card{flex:1 1 calc(25% - 20px);background:white;padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.08);min-width:250px;text-align:center;}
+.card img{width:120px;height:auto;margin-bottom:12px;border-radius:8px;}
+.card h3{color:#0b132b;margin-top:0;font-size:18px;}
+.card p{font-size:14px;margin-bottom:10px;}
+.btn{display:inline-block;padding:8px 16px;background:#1c7ed6;color:white;text-decoration:none;border-radius:6px;font-weight:600;transition:.3s;}
+.btn:hover{background:#1864ab;}
+footer{text-align:center;padding:30px;font-size:13px;color:#666;background:#f0f3f8;}
+@media(max-width:992px){.cards{flex-direction:column;}.card{flex:1 1 100%;}}
 </style>
 </head>
 <body>
-
-<!-- Header Global -->
-<div id="header"></div>
-<script>
-fetch("header.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  });
-</script>
+<header>
+<nav>
+<a href="index.html">Home</a>
+<a href="license.html">Verificar Licença</a>
+<a href="ads.html">Análise de Publicidade</a>
+<a href="guides.html">Guias</a>
+<a href="methodology.html">Metodologia</a>
+<a href="news.html">Notícias</a>
+<a href="about.html">Sobre</a>
+</nav>
+</header>
 
 <main>
-<h1>Verificar Licença</h1>
-
-<p>
-Em Portugal, apenas operadores licenciados pelo Serviço de Regulação e Inspeção de Jogos (SRIJ) podem oferecer apostas online legalmente.
-</p>
-
-<p>
-Jogar em plataformas não licenciadas pode resultar na perda de dinheiro, falta de proteção ao consumidor e ausência de mecanismos legais de reclamação.
-</p>
-
-<p>
-Consulte abaixo a lista de alguns operadores atualmente licenciados.
-</p>
-
-<div style="text-align:center; margin-bottom:40px;">
-  <a href="https://www.srij.turismodeportugal.pt" target="_blank" class="srij-btn">
-    Confirmar lista oficial no site do SRIJ
-  </a>
-</div>
+<h1>Operadores Licenciados em Portugal</h1>
+<p>Confira abaixo a lista completa de operadores licenciados pelo <strong>SRIJ</strong>. Clique em um operador para mais informações e promoções. Lembre-se sempre de jogar de forma responsável.</p>
 
 <div class="cards">
-
   <div class="card">
-    <img src="images/bacanaplay.jpg" alt="Bacana Play">
+    <img src="images/bacana_play.jpg" alt="Bacana Play">
     <h3>Bacana Play</h3>
-    <p>www.bacanaplay.pt</p>
-    <a href="operators/bacana_play.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/bacana_play.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/betano.jpg" alt="Betano">
     <h3>Betano</h3>
-    <p>www.betano.pt</p>
-    <a href="operators/betano.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/betano.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/betclic.jpg" alt="Betclic">
     <h3>Betclic</h3>
-    <p>www.betclic.pt</p>
-    <a href="operators/betclic.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/betclic.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/bwin.jpg" alt="Bwin">
     <h3>Bwin</h3>
-    <p>www.bwin.pt</p>
-    <a href="operators/bwin.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/bwin.html">Ver Operador</a>
   </div>
-
   <div class="card">
-    <img src="images/casinoportugal.jpg" alt="Casino Portugal">
+    <img src="images/casino_portugal.jpg" alt="Casino Portugal">
     <h3>Casino Portugal</h3>
-    <p>www.casinoportugal.pt</p>
-    <a href="operators/casino_portugal.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/casino_portugal.html">Ver Operador</a>
   </div>
-
   <div class="card">
-    <img src="images/esconline.jpg" alt="ESC Online">
+    <img src="images/esc_online.jpg" alt="ESC Online">
     <h3>ESC Online</h3>
-    <p>www.esconline.pt</p>
-    <a href="operators/esc_online.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/esc_online.html">Ver Operador</a>
   </div>
-
   <div class="card">
-    <img src="images/goldenpark.jpg" alt="Golden Park">
+    <img src="images/golden_park.jpg" alt="Golden Park">
     <h3>Golden Park</h3>
-    <p>www.goldenpark.pt</p>
-    <a href="operators/golden_park.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/golden_park.html">Ver Operador</a>
   </div>
-
   <div class="card">
-    <img src="images/lebull.jpg" alt="Le Bull">
+    <img src="images/le_bull.jpg" alt="Le Bull">
     <h3>Le Bull</h3>
-    <p>www.lebull.pt</p>
-    <a href="operators/le_bull.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/le_bull.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/luckia.jpg" alt="Luckia">
     <h3>Luckia</h3>
-    <p>www.luckia.pt</p>
-    <a href="operators/luckia.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/luckia.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/moosh.jpg" alt="Moosh">
     <h3>Moosh</h3>
-    <p>www.moosh.pt</p>
-    <a href="operators/moosh.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/moosh.html">Ver Operador</a>
   </div>
-
   <div class="card">
-    <img src="images/nossaaposta.jpg" alt="Nossa Aposta">
+    <img src="images/nossa_aposta.jpg" alt="Nossa Aposta">
     <h3>Nossa Aposta</h3>
-    <p>www.nossaaposta.pt</p>
-    <a href="operators/nossa_aposta.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/nossa_aposta.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/placard.jpg" alt="Placard">
     <h3>Placard</h3>
-    <p>www.placard.pt</p>
-    <a href="operators/placard.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/placard.html">Ver Operador</a>
   </div>
-
   <div class="card">
-    <img src="images/pokerstars.jpg" alt="Poker Stars">
+    <img src="images/poker_stars.jpg" alt="Poker Stars">
     <h3>Poker Stars</h3>
-    <p>www.pokerstars.pt</p>
-    <a href="operators/poker_stars.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/poker_stars.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/solverde.jpg" alt="Solverde">
     <h3>Solverde</h3>
-    <p>www.solverde.pt</p>
-    <a href="operators/solverde.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/solverde.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/versus.jpg" alt="Versus">
     <h3>Versus</h3>
-    <p>www.versus.pt</p>
-    <a href="operators/versus.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/versus.html">Ver Operador</a>
   </div>
-
   <div class="card">
     <img src="images/yobingo.jpg" alt="YoBingo">
     <h3>YoBingo</h3>
-    <p>www.yobingo.pt</p>
-    <a href="operators/yobingo.html" class="btn">Ver detalhes</a>
+    <a class="btn" href="operators/yobingo.html">Ver Operador</a>
   </div>
-
+  <div class="card">
+    <img src="images/888.jpg" alt="888">
+    <h3>888</h3>
+    <a class="btn" href="operators/888.html">Ver Operador</a>
+  </div>
 </div>
+
+<p style="margin-top:30px;text-align:center;">
+Para confirmação oficial das licenças, consulte o <a href="https://www.srij.turismodeportugal.pt/" target="_blank">site do SRIJ</a>.
+</p>
+
 </main>
 
-<!-- Footer Global -->
-<div id="footer"></div>
-<script>
-fetch("footer.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-  });
-</script>
-
+<footer>
+<p>BetTransparency © 2026</p>
+<p>Projeto educativo e informativo sobre publicidade de apostas online.</p>
+<p>Fonte oficial: SRIJ – Serviço de Regulação e Inspeção de Jogos</p>
+</footer>
 </body>
 </html>
