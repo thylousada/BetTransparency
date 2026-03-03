@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Betano - Operador Licenciado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #eef2f7;
+      color: #222;
+      line-height: 1.6;
+    }
 
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0b132b;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .operator-logo {
+      display: block;
+      margin: 0 auto 25px auto;
+      width: 180px;
+      border-radius: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      background: #1c7ed6;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1864ab;
+    }
+
+    .back {
+      display: block;
+      margin-bottom: 25px;
+      color: #0b132b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header Global -->
+<div id="header"></div>
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
+
+<main>
+  <a class="back" href="license.html">← Voltar à lista de operadores</a>
+
+  <h1>Betano</h1>
+  <img src="images/betano.jpg" alt="Betano Logo" class="operator-logo">
+
+  <p>A Betano é um operador de apostas online totalmente licenciado em Portugal pelo Serviço de Regulação e Inspeção de Jogos (SRIJ).</p>
+
+  <p>Oferece apostas desportivas, casino online e promoções especiais, sempre em conformidade com a legislação portuguesa.</p>
+
+  <p><strong>Licença:</strong> Licença SRIJ nº 17 e 18 </p>
+
+  <p>Para jogar legalmente, aceda ao site oficial:</p>
+
+  <a href="https://www.betano.pt" target="_blank" class="btn">Visitar site oficial da Betano</a>
+</main>
+
+<!-- Footer Global -->
+<div id="footer"></div>
+<script>
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });
+</script>
+
+</body>
+</html>
