@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Verificar Licença - BetTransparency</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-    body{font-family:'Roboto',sans-serif;margin:0;background:#eef2f7;color:#222;line-height:1.6;}
-    header{background:#0b132b;color:white;padding:20px 40px;position:sticky;top:0;z-index:100;}
-    nav{display:flex;flex-wrap:wrap;justify-content:center;}
-    nav a{color:white;margin:0 15px;text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px;border-radius:5px;}
-    nav a:hover{background:#1c2a4a;}
-    main{padding:50px 20px;max-width:1000px;margin:30px auto;background:white;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.08);}
-    h1{margin-top:0;font-weight:700;color:#0b132b;text-align:center;}
-    p, li{font-size:16px;}
-    ul{margin-left:20px;}
-    .btn{display:inline-block;padding:12px 22px;background:#1c7ed6;color:white;text-decoration:none;border-radius:8px;margin-top:20px;font-weight:600;transition:0.3s;}
-    .btn:hover{background:#1864ab;}
-    .country-info{text-align:center;margin:20px 0;font-weight:500;font-size:16px;color:#1c2a4a;}
-    footer{text-align:center;padding:30px;font-size:13px;color:#666;background:#f0f3f8;}
-    @media(max-width:768px){main{padding:30px 15px;} nav a{margin:8px 10px;font-size:14px;}}
-  </style>
+<meta charset="UTF-8">
+<title>Operadores Licenciados - BetTransparency</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  background: #eef2f7;
+}
+
+header {
+  background: #0b132b;
+  padding: 20px;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0b132b;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #1c7ed6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+</style>
 </head>
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="license.html">Verificar Licença</a>
-    <a href="ads.html">Análise de Publicidade</a>
-    <a href="guides.html">Guias</a>
-    <a href="methodology.html">Metodologia</a>
-    <a href="news.html">Notícias</a>
-    <a href="about.html">Sobre</a>
-  </nav>
+  <a href="index.html">← Voltar à Home</a>
 </header>
 
 <main>
-  <h1>Verificar Licença de Operadores</h1>
-  <div class="country-info">País analisado: Portugal • Expansão futura: Espanha • França • Itália</div>
-  <p>Para garantir que está a jogar em plataformas seguras e legais, consulte sempre a lista oficial de operadores licenciados em Portugal.</p>
-  <ul>
-    <li>Vá ao site oficial do <a href="https://www.srij.turismodeportugal.pt" target="_blank">SRIJ</a>.</li>
-    <li>Procure o operador na lista de licenciados.</li>
-    <li>Se não constar na lista, não é legal em Portugal.</li>
-  </ul>
-  <a class="btn" href="index.html">← Voltar à Home</a>
-</main>
+<h1>Operadores Licenciados em Portugal</h1>
 
-<footer>
-  <p>BetTransparency © 2026</p>
-  <p>Projeto educativo e informativo sobre publicidade de apostas online.</p>
-  <p>Fonte oficial: SRIJ – Serviço de Regulação e Inspeção de Jogos</p>
-</footer>
+<div class="cards">
+
+  <div class="card">
+    <img src="images/betano.jpg" alt="Betano">
+    <h3>Betano</h3>
+    <p>www.betano.pt</p>
+    <a href="betano.html">Ver detalhes</a>
+  </div>
+
+  <div class="card">
+    <img src="images/placard.jpg" alt="Placard">
+    <h3>Placard</h3>
+    <p>www.placard.pt</p>
+    <a href="placard.html">Ver detalhes</a>
+  </div>
+
+  <div class="card">
+    <img src="images/solverde.jpg" alt="Solverde">
+    <h3>Solverde</h3>
+    <p>www.solverde.pt</p>
+    <a href="solverde.html">Ver detalhes</a>
+  </div>
+
+</div>
+</main>
 
 </body>
 </html>
