@@ -72,9 +72,15 @@ h1 {
 </head>
 <body>
 
-<header>
-  <a href="index.html">← Voltar à Home</a>
-</header>
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
+</script>
 
 <main>
 <h1>Verificar Licença</h1>
