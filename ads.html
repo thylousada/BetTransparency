@@ -40,16 +40,29 @@ fetch("header.html")
   <h1>Análise de Publicidade de Operadores Ilegais</h1>
   <div class="country-info">País analisado: Portugal • Expansão futura: Espanha • França • Itália</div>
 
-  <div class="article-box">
-    <h2>Exemplo de publicidade em redes sociais</h2>
-    <p>Este vídeo mostra um influenciador promovendo uma casa de apostas que não está licenciada em Portugal. Jogadores devem estar atentos aos riscos.</p>
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Exemplo de vídeo" allowfullscreen></iframe>
-  </div>
+  <div id="ads-container"></div>
 
-  <div class="article-box">
-    <h2>Promoções suspeitas</h2>
-    <p>Alguns operadores ilegais oferecem bónus muito altos ou ganhos fáceis sem qualquer referência a licença oficial. Isso é um alerta para evitar registo.</p>
-  </div>
+<script>
+fetch("data/ads.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("ads-container");
+
+    data.forEach(item => {
+      const box = document.createElement("div");
+      box.className = "article-box";
+
+      box.innerHTML = `
+        <h2>${item.titulo}</h2>
+        <p>${item.descricao}</p>
+        ${item.video ? `<iframe src="${item.video}" allowfullscreen></iframe>` : ""}
+        <a class="btn" href="${item.link}">Ler análise completa</a>
+      `;
+
+      container.appendChild(box);
+    });
+  });
+</script>
 
   <a class="btn" href="index.html">← Voltar à Home</a>
 </main>
