@@ -1,14 +1,13 @@
 [
   {
-    "titulo": "Influenciador X promove operador não licenciado",
-    "descricao": "Promoção de plataforma não regulada pelo SRIJ.",
-    "imagem": "images/article1.jpg",
+    "titulo": "Influenciador promove operador não licenciado",
+    "descricao": "Promoção feita no Instagram de plataforma não autorizada pelo SRIJ.",
+    "video": "https://www.youtube.com/embed/VIDEO_ID",
     "link": "article1.html"
   },
   {
-    "titulo": "Bónus elevado sem operador legal",
-    "descricao": "Publicidade com promessa de ganhos irreais.",
-    "imagem": "images/article2.jpg",
+    "titulo": "Bónus irrealista divulgado em grupo Telegram",
+    "descricao": "Oferta de 500% de bónus sem qualquer informação legal.",
     "link": "article2.html"
   }
 ]
