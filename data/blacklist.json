@@ -8,14 +8,14 @@
   {
     "nome": "Spin Winera",
     "website": "https://2-spinwinera11.com/pt/dispute-resolution",
+    "app": "",
     "motivo": "Operador não licenciado pelo SRIJ."
-  }, 
+  },
   {
     "nome": "1xBet",
-    "website": " https://1x-bet.mobi/pt/",
-    "app": " https://1xbet.br.uptodown.com/android",
+    "website": "https://1x-bet.mobi/pt/",
+    "app": "https://1xbet.br.uptodown.com/android",
     "motivo": "Operador não licenciado pelo SRIJ."
-    "Link Website": "https://1x-bet.mobi/pt/" 
   },
   {
     "nome": "SuperWinPro",
@@ -23,4 +23,5 @@
     "app": "",
     "motivo": "Promoção ativa em Portugal sem autorização legal."
   }
+]
 ]
